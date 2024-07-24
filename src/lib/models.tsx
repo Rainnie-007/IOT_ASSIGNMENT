@@ -8,3 +8,14 @@ export interface Book {
   synopsis: string;
   genre: string;
 }
+export interface Coffee {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  is_available: boolean;
+  quantity: number;
+  notes: string;
+  ordered_time: string;
+}
+ 
