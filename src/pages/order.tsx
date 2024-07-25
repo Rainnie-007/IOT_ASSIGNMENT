@@ -56,7 +56,8 @@ export default function OrderPage() {
                  <p className="italic text-neutral-500 mb-4">
   Order Date: {new Date(order.order_date).toLocaleString()}
 </p>
-                  <p className="text-neutral-500 mb-4">{order.notes}</p>
+                  <p className="text-neutral-500 mb-2">{order.notes}</p>
+                  <p className="text-neutral-500 mb-2">Quantity : {order.quantity} </p>
                   <div className="flex justify-between items-center">
                     <div className="text-lg font-semibold">{order.total_price} Baht</div>
                   </div>
