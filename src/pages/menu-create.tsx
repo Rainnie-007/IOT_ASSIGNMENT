@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Layout from "../components/layout";
-import { Button, Checkbox, Container, Divider, NumberInput, TextInput } from "@mantine/core";
+import { Button,Checkbox, Container, Divider, NumberInput, TextInput } from "@mantine/core";
 import { isNotEmpty, useForm } from "@mantine/form";
 import { useState } from "react";
 import axios, { AxiosError } from "axios";
@@ -24,7 +24,7 @@ export default function MenuCreatePage() {
       name: isNotEmpty("กรุณาระบุชื่อเครื่องดื่ม"),
       description: isNotEmpty("กรุณาระบุชื่อรายละเอียด"),
       price: isNotEmpty("กรุณาระบุรายละเอียดเครื่องดื่ม"),
-      is_available: isNotEmpty("กรุณาระบุเรื่องย่อเครื่องดื่ม"),
+      is_available: isNotEmpty("กรุณาติ๊กใส่ผงชูรส"),
     },
   });
 
@@ -37,7 +37,7 @@ export default function MenuCreatePage() {
         message: "ข้อมูลเครื่องดื่มได้รับการเพิ่มเรียบร้อยแล้ว",
         color: "teal",
       });
-      navigate(`/coffee/${response.data.id}`);
+      navigate(`/menu/${response.data.id}`);
     } catch (error) {
       if (error instanceof AxiosError) {
         if (error.response?.status === 422) {
@@ -100,7 +100,7 @@ return (
                     {/* TODO: เพิ่มขนาด */}
 
                     <Checkbox
-                        label="สถานะการวางขาย"
+                        label="ผงชูรส"
                         {...coffeeCreateForm.getInputProps("is_available", {
                             type: "checkbox",
                         })}

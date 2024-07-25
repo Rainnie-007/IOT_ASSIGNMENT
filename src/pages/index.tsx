@@ -1,7 +1,8 @@
 import Layout from "../components/layout";
 import cafeBackgroundImage from "../assets/images/bg-cafe-1.jpg";
 import ajPanwitImage from "../assets/images/aj-panwit.jpg";
-import coffeeImage from "../assets/images/coffee-1.jpg";
+// import coffeeImage from "../assets/images/coffee-1.jpg";
+import rain from "../assets/images/rain.jpg";
 
 export default function HomePage() {
   return (
@@ -22,28 +23,60 @@ export default function HomePage() {
         <div className="grid grid-cols-3 gap-4">
           <p className="text-left col-span-2">
             IoT Library & Cafe เป็นร้านกาแฟที่มีหนังสืออยู่นิดหน่อยให้คุณได้อ่าน
-            และเรียนรู้เรื่องใหม่ๆ ที่เกี่ยวกับเทคโนโลยี IoT โดยคาเฟ่ของเรานั้น ก่อตั้งขึ้นโดย
-            ผศ.ดร. ปานวิทย์ ธุวะนุติ ซึ่งเป็นอาจารย์ในวิชา Internet of Things และนายกฤตณัฏฐ์
-            ศิริพรนพคุณ เป็นผู้ช่วยสอนในหัวข้อ FastAPI และ React ในวิชานี้
+            และเรียนรู้เรื่องใหม่ๆ ที่เกี่ยวกับเทคโนโลยี IoT โดยคาเฟ่ของเรานั้น
+            ก่อตั้งขึ้นโดย ผศ.ดร. ปานวิทย์ ธุวะนุติ ซึ่งเป็นอาจารย์ในวิชา
+            Internet of Things และนายกฤตณัฏฐ์ ศิริพรนพคุณ เป็นผู้ช่วยสอนในหัวข้อ
+            FastAPI และ React ในวิชานี้
           </p>
 
           <div>
-            <img src={ajPanwitImage} alt="Panwit Tuwanut" className="h-full w-full object-cover" />
+            <img
+              src={ajPanwitImage}
+              alt="Panwit Tuwanut"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
         <p className="text-right mt-8">
           ปัจจุบันค่าเฟ่ และห้องสมุดของเรา อยู่ในช่วงการดูแลของ ....
           {/* TODO: ชื่อของตนเอง, รหัสประจำตัวนักศึกษา และแนะนำคาเฟ่นี้ต่ออีกสักหน่อย + ใส่รูปของตนเอง (ไม่จำเป็นหากไม่สะดวกใจใส่รูป) */}
-          ซึ่งมีบริการ... Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          placeat sit ea sapiente officia sunt cumque impedit, reiciendis quis eius asperiores!
-          Minus, mollitia? Vitae inventore odio quod ducimus similique, expedita sequi, reiciendis
-          rem recusandae impedit voluptatibus quo veritatis ut quis et suscipit? Eligendi, neque!
-          Earum quaerat unde similique totam. Pariatur!
+          ยงยุทธ ชาณุภาต 65070193{" "}
+          <b>
+            เอาเป็นว่าผม gen ร้านกาแฟมาเเทนครับเผื่อพี่จะได้ไปใช้บริการสักร้าน
+          </b>{" "}
+          นึงในยุคที่ร้านกาแฟเกิดขึ้นมากมาย
+          การหาคาเฟ่ที่มีเอกลักษณ์และสร้างความประทับใจให้กับลูกค้าไม่ใช่เรื่องง่าย
+          แต่ก็มีร้านกาแฟบางร้านที่ไม่ได้แค่เสิร์ฟกาแฟอร่อยๆ
+          แต่ยังมีความตลกและสนุกสนานที่ทำให้ลูกค้าจดจำและยิ้มได้ทุกครั้งที่ไปเยือน
+          บทความนี้จะพาคุณไปสำรวจร้านกาแฟตลกๆ ที่คุณควรไปลอง 1. คาเฟ่
+          "กาแฟดีที่พี่ต้องลอง" ที่ตั้ง: ซอยอารมณ์ดี, เขตบางกอกสนุกสนาน
+          ร้านกาแฟนี้ไม่เพียงแต่เสิร์ฟกาแฟรสชาติเยี่ยม
+          แต่ยังมีเมนูที่ตั้งชื่อได้อย่างขำขัน เช่น
+          "เอสเพรสโซ่ให้โลกรู้ว่าเราแรง", "คาปูชิโน่ให้โลกรู้ว่าเราฟิน", และ
+          "ลาเต้ให้โลกรู้ว่าเราเพ้อ" นอกจากนั้น
+          พนักงานที่นี่มักจะพูดคุยกับลูกค้าด้วยมุกตลกเสมอ
+          ทำให้บรรยากาศในร้านเต็มไปด้วยเสียงหัวเราะ 2. ร้าน
+          "จิบกาแฟและรับฟังเรื่องขำ" ที่ตั้ง: ถนนฮาเฮ, เขตบางกอกสุขใจ
+          ที่นี่คุณไม่เพียงแต่ได้ดื่มกาแฟที่อร่อยเท่านั้น
+          แต่ยังสามารถเพลิดเพลินกับการแสดงตลกสั้นๆ
+          ที่พนักงานจะทำให้คุณทุกครั้งที่คุณสั่งเครื่องดื่ม
+          เมนูที่นี่ก็มีชื่อขำขันเช่นกัน เช่น "มอคค่าเฮฮา", "อเมริกาโน่ใจเย็น",
+          และ "คาราเมลมัคคิอาโต้แสนสนุก" 3. คาเฟ่ "หัวเราะกับกาแฟ" ที่ตั้ง:
+          ซอยขำขัน, เขตบางกอกครึกครื้น
+          ร้านนี้มีจุดเด่นที่การตกแต่งร้านด้วยภาพการ์ตูนขำขันและมุกตลกบนผนัง
+          ทุกโต๊ะในร้านจะมีการ์ดมุกตลกวางไว้ให้ลูกค้าได้อ่านและหัวเราะกัน
+          นอกจากนี้ เมนูที่นี่ก็มีชื่อขำๆ เช่น "ลาเต้ล้อเล่น",
+          "คาปูชิโน่คลายเครียด", และ "มอคค่ามหาสนุก" 4. ร้าน "กาแฟและมุกเด็ด"
+          ที่ตั้ง: ถนนยิ้มสยาม, เขตบางกอกสบายใจ
+          ที่นี่มีพนักงานที่มีพรสวรรค์ในการเล่าเรื่องตลกและทำให้ลูกค้ายิ้มได้เสมอ
+          นอกจากนี้ เมนูของร้านก็มีความตลกไม่แพ้กัน เช่น "เอสเพรสโซ่แรงเวอร์",
+          "ลาเต้หวานใจ", และ "อเมริกาโน่ฮาๆ"
+          ลูกค้าที่มาที่นี่จะได้รับประสบการณ์การดื่มกาแฟที่ไม่เหมือนใคร
         </p>
       </section>
 
       <section className="w-full flex justify-center">
-        <img src={coffeeImage} alt="Coffee" className="w-full" />
+        <img src={rain} alt="Coffee" className="w-full" />
       </section>
     </Layout>
   );

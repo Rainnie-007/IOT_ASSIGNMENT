@@ -50,6 +50,8 @@ export default function MenuPage() {
             </Alert>
           )}
 
+          {Coffee?.length === 0 && <p>No coffee Now</p>}
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {Coffee?.map((coffee) => (
                 <div key={coffee.id} className="border border-solid border-neutral-200 rounded-lg overflow-hidden">
@@ -60,15 +62,15 @@ export default function MenuPage() {
                 />
                 <div className="p-4">
                     <h2 className="text-lg font-semibold mb-2">{coffee.name}</h2>
-                    <p className="text-sm text-neutral-500 mb-4">{coffee.description}</p>
+                    <p className="text-sm text-neutral-500 mb-4 text-nowrap">{coffee.description}</p>
                     
                     <div className="flex justify-between items-center">
                     <div className="text-lg font-semibold">{coffee.price} Baht</div>
                     <Button
                         component={Link}
-                        to={`/Coffee/${coffee.id}`}
+                        to={`/coffee/${coffee.id}`}
                         size="sm"
-                        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+                        className="bg-blue-500 hover:bg-blue-600 self-end text-white px-4 py-2 rounded-md"
                     >
                         สั่งเครื่องดื่ม
                     </Button>

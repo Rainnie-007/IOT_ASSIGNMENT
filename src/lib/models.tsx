@@ -4,8 +4,8 @@ export interface Book {
   author: string;
   year: number;
   is_published: boolean;
-  detail: string;
-  synopsis: string;
+  details: string;
+  short_details: string;
   genre: string;
 }
 export interface Coffee {
@@ -14,8 +14,13 @@ export interface Coffee {
   description: string;
   price: number;
   is_available: boolean;
-  quantity: number;
-  notes: string;
-  ordered_time: string;
 }
- 
+
+export interface Order {
+  id: number;
+  order_date: Date;
+  coffee_id: number;
+  quantity: number;
+  total_price: number;
+  notes: string;
+}

@@ -18,8 +18,8 @@ export default function BookCreatePage() {
       author: "",
       year: 2024,
       is_published: false,
-      detail: "",
-      synopsis: "",
+      details: "",
+      short_details: "",
       genre: "",
     },
 
@@ -27,8 +27,8 @@ export default function BookCreatePage() {
       title: isNotEmpty("กรุณาระบุชื่อหนังสือ"),
       author: isNotEmpty("กรุณาระบุชื่อผู้แต่ง"),
       year: isNotEmpty("กรุณาระบุปีที่พิมพ์หนังสือ"),
-      detail: isNotEmpty("กรุณาระบุรายละเอียดหนังสือ"),
-      synopsis: isNotEmpty("กรุณาระบุเรื่องย่อหนังสือ"),
+      details: isNotEmpty("กรุณาระบุรายละเอียดหนังสือ"),
+      short_details: isNotEmpty("กรุณาระบุเรื่องย่อหนังสือ"),
       genre: isNotEmpty("กรุณาระบุหมวดหมู่หนังสือ"),
     },
   });
@@ -99,12 +99,12 @@ export default function BookCreatePage() {
             <TextInput
               label="รายละเอียดหนังสือ"
               placeholder="รายละเอียดหนังสือ"
-              {...bookCreateForm.getInputProps("detail")}
+              {...bookCreateForm.getInputProps("details")}
             />
             <TextInput
               label="เรื่องย่อ"
               placeholder="เรื่องย่อ"
-              {...bookCreateForm.getInputProps("synopsis")}
+              {...bookCreateForm.getInputProps("short_details")}
             />
             <Select
               label="หมวดหมู่"
